@@ -1,5 +1,14 @@
 html {
   box-sizing: border-box;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(2, 69, 9, 0.8), rgba(11, 82, 61, 0.7)),
+    url(../img/potions-classroom.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .container {
@@ -8,10 +17,28 @@ html {
 }
 .gif-box {
   margin: auto;
-  padding-top: 10%;
+  padding-top: 10rem;
+  cursor: url("../img/wand.png"), pointer;
 }
 .btn {
   max-width: fit-content;
   margin: auto;
   margin-bottom: -30%;
+  font-size: 1.6rem;
+  display: inline-block;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  border: none;
+  background: linear-gradient(#f3ae0f, #e38916);
+  transition: all 0.2;
+
+  &:hover {
+    cursor: pointer;
+    background: darken(#f3ae0f, 10%);
+    box-shadow: 0 1rem 2rem rgba(#e38916, 0.2);
+  }
+  &:active {
+    background: #cc7c12;
+    box-shadow: 0 1rem 2rem rgba(#e38916, 0.2);
+  }
 }
