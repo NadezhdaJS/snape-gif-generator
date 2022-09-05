@@ -3,6 +3,22 @@ html {
   box-sizing: border-box;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.gif-box {
+  margin: auto;
+  padding-top: 10%;
+}
+
+.btn {
+  max-width: fit-content;
+  margin: auto;
+  margin-bottom: -30%;
+}
+
 @font-face {
   font-family: TTTrailers;
   font-display: swap;
